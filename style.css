@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Inconsolata:wght@200;300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -146,5 +147,9 @@ main{
 }
 
 .calculadora > li:first-child {
-    flex-grow: 778;
+    flex-basis: 100%;
+}
+
+.cero{
+    flex-basis: 46.8%;
 }
