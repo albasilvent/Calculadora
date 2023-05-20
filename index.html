@@ -5,17 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculadora</title>
-        <link rel="stylesheet" href="./style.css";
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
         <header>
-            <h1>CALCULADORA</h1>
-            <button id="historial">Historial</button>
-            <div class="separador"></div>
-            <label class="botonModos">
-                <input type="checkbox" />
-                <span class="slider"></span>
-            </label>
+            <h1>Calculadora</h1>
+            <div class="contenedor">
+                <section class="historial"><p>Historial</p></section>
+                <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </div>
         </header>
 
         <main>
@@ -26,7 +27,7 @@
                 </div>
             </div>
 
-            <ul>
+            <ul class="calculadora">
                 <li class="pantalla" placeholder="0"></li>
                 <li>AC</li>
                 <li>CE</li>
@@ -44,23 +45,22 @@
                 <li>2</li>
                 <li>3</li>
                 <li>+</li>
-                <li>0</li>
+                <li class="cero">0</li>
                 <li>,</li>
                 <li>=</li>
             </ul>
-
-            <footer>
-                <div class="Alba">
-                    <p>Alba Silvent Delgado</p>
-                    <img />
-                    <img />
-                </div>
-                <div class="Joshue">
-                    <p>Joshué Pérez Díaz</p>
-                    <img />
-                    <img />
-                </div>
-            </footer>
         </main>
+        <footer>
+            <div class="Alba">
+                <p>Alba Silvent Delgado</p>
+                <img />
+                <img />
+            </div>
+            <div class="Joshue">
+                <p>Joshué Pérez Díaz</p>
+                <img />
+                <img />
+            </div>
+        </footer>
     </body>
 </html>
