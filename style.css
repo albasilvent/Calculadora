@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --naranja: #ff9500;
+    --rojo: #ff4740;
+    --gris: #8c8c8c;
 }
 
 html {
@@ -23,7 +26,7 @@ header {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 149, 0);
+    background-color: var(--naranja);
 }
 
 .contenedor {
@@ -46,6 +49,7 @@ header {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 h1 {
@@ -123,6 +127,32 @@ main {
     padding: 1rem;
 }
 
+/* MODAL */
+
+.modal-ext {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-int {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
 .hide {
     display: none;
 }
@@ -150,7 +180,7 @@ main {
 
 .calculadora > li:first-child {
     flex-basis: 98%;
-    background-color: #ff4740;
+    background-color: var(--rojo);
 }
 
 #cero {
@@ -161,7 +191,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: start;
-    background-color: #ff8c00;
+    background-color: var(--naranja);
 }
 
 #cero > p {
@@ -179,12 +209,39 @@ main {
 #ac,
 #c,
 #porciento {
-    background-color: rgb(140, 140, 140);
+    background-color: var(--gris);
 }
 
 /* FOOTER */
 
 footer {
     height: calc(100vh - (17vh + 75vh));
-    background-color: rgb(140, 140, 140);
+    background-color: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+footer > div {
+    height: 70%;
+    width: 40%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+footer > div > p {
+    position: relative;
+    font-size: 14px;
+}
+
+footer img {
+    display: none;
+    height: 23px;
 }
