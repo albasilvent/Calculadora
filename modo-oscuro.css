@@ -1,0 +1,64 @@
+* {
+    --azul: #a2d6fb;
+    --azulOscuro: #10103b;
+    --grisOscuro: #303136;
+}
+
+/* HEADER */
+
+.modoOscuro h1 {
+    color: var(--azul);
+}
+
+.modoOscuro header {
+    background-color: var(--azulOscuro);
+}
+
+.modoOscuro .historial {
+    background-color: var(--azul);
+}
+
+/* MAIN */
+
+.modoOscuro main {
+    background-color: var(--grisOscuro);
+}
+
+.modoOscuro .calculadora > li {
+    background-color: var(--azul);
+}
+
+.modoOscuro #cero {
+    background-color: var(--azul);
+}
+
+.modoOscuro #suma,
+.modoOscuro #resta,
+.modoOscuro #division,
+.modoOscuro #multiplicacion,
+.modoOscuro #igual {
+    background-color: var(--azulOscuro);
+    color: var(--azul);
+}
+
+.modoOscuro .calculadora > li:first-child {
+    background-color: var(--azulOscuro);
+    color: var(--azul);
+}
+
+/* FOOTER */
+
+.modoOscuro footer > div {
+    background-color: var(--azul);
+}
+
+/* MODAL */
+
+.modoOscuro #modal-int {
+    background-color: var(--grisOscuro);
+}
+
+.modoOscuro h2 {
+    background-color: var(--azul);
+}
+
