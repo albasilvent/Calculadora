@@ -146,7 +146,7 @@ main{
     background-color: grey;
 }
 
-.calculadora > li:first-child {
+.pantalla{
     flex-basis: 100%;
 }
 
