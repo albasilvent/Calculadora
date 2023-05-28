@@ -42,7 +42,7 @@
 }
 
 .modoOscuro .calculadora > li:first-child {
-    background-color: var(--azulOscuro);
+    background-color: rgb(211, 227, 239);
     color: var(--azul);
 }
 
