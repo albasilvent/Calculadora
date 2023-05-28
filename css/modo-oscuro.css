@@ -62,3 +62,6 @@
     background-color: var(--azul);
 }
 
+.modoOscuro .borrar {
+    background-color: var(--azul);
+}

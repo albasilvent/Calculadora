@@ -13,6 +13,8 @@ const pAlba = document.querySelector(".nomAlba");
 const pJoshue = document.querySelector(".nomJoshue");
 const imgFooterAlba = document.querySelectorAll(".img");
 const imgFooterJoshue = document.querySelectorAll(".img1");
+const borrar = document.querySelector(".borrar");
+const sectionHistorial = document.querySelector(".sectionHistorial");
 
 historial.addEventListener("click", (event) => {
     modal.classList.toggle("hide");
@@ -49,3 +51,8 @@ divJoshue.addEventListener("click", (event) => {
         elemento.classList.toggle("hideDos");
     });
 });
+
+borrar.addEventListener("click", (event) => {
+    sectionHistorial.textContent = "";
+});
+
