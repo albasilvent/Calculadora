@@ -43,6 +43,7 @@ divAlba.addEventListener("click", (event) => {
 });
 
 divJoshue.addEventListener("click", (event) => {
+    event.stopPropagation;
     pJoshue.classList.toggle("hideDos");
     imgFooterJoshue.forEach((elemento) => {
         elemento.classList.toggle("hideDos");
